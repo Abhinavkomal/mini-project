@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{float u,v,w,x,y;
+ int a; float b,c,d;
+ printf("Number of shares brought from Reliance:"); 
+ scanf("%d",&a);
+   printf("Price of each share: ");   
+   scanf("%f",&b);
+   printf("Market price of each share: ");   
+   scanf("%f",&c);
+d=((c-b)*100)/b;
+u=c-b;
+int e;float f,g,h;
+printf("----------------------\n");
+printf("Number of shares brought from Airtel: "); 
+ scanf("%d",&e);
+   printf("Price of each share: ");   
+   scanf("%f",&f);
+   printf("Market price of each share: ");   
+   scanf("%f",&g);
+   h=((g-f)*100)/b;
+   v=g-f;
+   int i; float j,k,l;
+   printf("----------------------\n");
+ printf("Number of shares brought from HUL: "); 
+ scanf("%d",&i);
+   printf("Price of each share: ");   
+   scanf("%f",&j);
+   printf("Market price of each share: ");   
+   scanf("%f",&k);
+   l=((k-j)*100)/b;
+   w=k-j;
+   int m; float n,o,p;
+   printf("----------------------\n");
+ printf("Number of shares brought from HDFC : "); 
+ scanf("%d",&m);
+   printf("Price of each share: ");   
+   scanf("%f",&n);
+   printf("Market price of each share: ");   
+   scanf("%f",&o);
+   p=((o-n)*100)/b;
+   x=o-n;
+   int q; float r,s,t;
+   printf("----------------------\n");
+ printf("Number of shares brought from TATA: "); 
+ scanf("%d",&q);
+   printf("Price of each share: ");   
+   scanf("%f",&r);
+   printf("Market price of each share: ");   
+   scanf("%f",&s);
+   t=((s-r)*100)/b;
+   y=s-r;
+   printf("----------------------------------------------------------------------------------------------------------------------------------------\n");
+   printf("Sl.no.|    Name of stock                  | Quantity |  Price |Market Price |Percent of profit/loss |Amount gain/lost     |Profit/Loss  |\n");
+   printf("----------------------------------------------------------------------------------------------------------------------------------------\n");
+   printf("1     | Reliance Industries Ltd.          |%d        |%.2f    |%.2f         |  %.2f                 |%.2f                 |",a,b,c,d,u);  if(c>b) {printf("Profit\n");} else if(c<b) { printf("Loss\n");} else{printf("Break-even\n");}
+   printf("2     | Bharti Airtel Ltd.                |%d        |%.2f    |%.2f         |  %.2f                 |%.2f                 |",e,f,g,h,v);  if(e>f) {printf("Profit\n");} else if(e<f) { printf("Loss\n");} else{printf("Break-even\n");}
+   printf("3     | Hindustan Unilever Ltd.           |%d        |%.2f    |%.2f         |  %.2f                 |%.2f                 |",i,j,k,l,w);  if(k>j) {printf("Profit\n");} else if(k<j) { printf("Loss\n");} else{printf("Break-even\n");}
+   printf("4     | HDFC Ltd.                         |%d        |%.2f    |%.2f         |  %.2f                 |%.2f                 |",m,n,o,p,x);  if(o>n) {printf("Profit\n");} else if(o<n) { printf("Loss\n");} else{printf("Break-even\n");}
+   printf("5     | TATA Consultancy Services         |%d        |%.2f    |%.2f         |  %.2f                 |%.2f                 |",q,r,s,t,y);  if(s>r) {printf("Profit\n");} else if(s<r) { printf("Loss\n");} else{printf("Break-even\n");}
+   printf("Reasons for Performance of stocks\nReliance:     \nAirtel: \nHUL: \nHDFC: \nTATA: \n");
+    return 0;}
